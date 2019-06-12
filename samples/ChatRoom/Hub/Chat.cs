@@ -3,9 +3,9 @@
 
 using Microsoft.AspNetCore.SignalR;
 
-namespace Microsoft.Azure.SignalR.Samples.ChatRoom
+namespace Microsoft.Azure.SignalR.Samples.ChatRoom.Hub
 {
-    public class Chat : Hub
+    public class Chat : AspNetCore.SignalR.Hub
     {
         public void BroadcastMessage(string name, string message)
         {
